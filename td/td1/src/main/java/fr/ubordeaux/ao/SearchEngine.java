@@ -2,12 +2,18 @@ package fr.ubordeaux.ao;
 
 import java.util.*;
 
+/**
+ * Réponse au TD:
+ *  Pas besoin d'avoir plusieurs instances de cette classe, cela n'a pas de sens d'avoir plusieurs moteur de
+ *  recherche. (cf: Design pattern 'Singleton' + délégation dynamique (cf: cours du 16/09))
+ */
 public class SearchEngine {
   private Set<Contact> contacts;
 
 
   public SearchEngine(ContactSet contacts) {
-    this.contacts = contacts.getContact(0, contacts.size());
+    // On ne modifie pas l'objet contacts passé en paramètre du constructeur
+    this.contacts = contacts.getContactSet(0, contacts.size());
   }
 
   public Set<Contact> search(String contact) {

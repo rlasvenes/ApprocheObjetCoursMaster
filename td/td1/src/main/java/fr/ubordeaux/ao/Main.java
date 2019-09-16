@@ -18,14 +18,14 @@ public class Main {
         }
         System.out.println(MAX+" contacts created !");
 
-        // **************************************************************************************
+        // ******************************* Service ***********************************
 
         Contact c2 = new Contact("Marie", "Tesla", null);
         Contact c3 = new Contact("Mathilde", "Tesla", null);
         Contact c4 = new Contact("Maria", "Tesla", null);
         Contact c5 = new Contact("Marine", "Tesla", null);
 
-        
+
 
         contactSet.addContact(c2);
         contactSet.addContact(c3);
@@ -36,6 +36,11 @@ public class Main {
         resultContacts = searchEngine.search("Marine");
 
         System.out.println("Result is : " + resultContacts);
+
+        // ******************************** Dépôt **********************************
+
+        TownSet townSet = new TownSet(new TownFactory());
+        System.out.println("Nombre de villes : " + townSet.getTowns().size());
 
         try {
             Thread.sleep(200000);
