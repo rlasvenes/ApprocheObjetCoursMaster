@@ -24,13 +24,13 @@ public class Main {
         Contact c3 = new Contact("Mathilde", "Tesla", null);
         Contact c4 = new Contact("Maria", "Tesla", null);
         Contact c5 = new Contact("Marine", "Tesla", null);
-
-
+        Contact c6 = new Contact("Delphine", "Menguy", null);
 
         contactSet.addContact(c2);
         contactSet.addContact(c3);
         contactSet.addContact(c4);
         contactSet.addContact(c5);
+        contactSet.addContact(c6);
 
         SearchEngine searchEngine = new SearchEngine(contactSet);
         resultContacts = searchEngine.search("Marine");
