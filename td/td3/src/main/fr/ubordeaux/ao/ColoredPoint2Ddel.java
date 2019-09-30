@@ -1,6 +1,7 @@
 package fr.ubordeaux.ao;
 
 import fr.ubordeaux.ao.Point2D;
+import java.util.Objects;
 
 public class ColoredPoint2Ddel {
     private Point2D point;
@@ -23,16 +24,20 @@ public class ColoredPoint2Ddel {
         if (!(o instanceof ColoredPoint2Ddel)) {
             return false;
         }
+
         ColoredPoint2Ddel coloredPoint2Ddel = (ColoredPoint2Ddel) o;
-        return Objects.equals(point, coloredPoint2Ddel.point) && r == coloredPoint2Ddel.r && g == coloredPoint2Ddel.g && b == coloredPoint2Ddel.b;
+        return point.equals(coloredPoint2Ddel.getPoint()) &&
+            (r == coloredPoint2Ddel.r) &&
+            (g == coloredPoint2Ddel.g) &&
+            (b == coloredPoint2Ddel.b);
     }
 
     @Override
     public int hashCode() {
         return Objects.hash(point, r, g, b);
     }
-    
-    
+
+
     public Point2D getPoint() {
         return this.point;
     }
@@ -64,4 +69,5 @@ public class ColoredPoint2Ddel {
     private void setB(int b) {
         this.b = b;
     }
+
 }

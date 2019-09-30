@@ -1,5 +1,7 @@
 package fr.ubordeaux.ao;
 
+import java.util.Objects;
+
 /**
  * Point2D
  */
@@ -20,27 +22,30 @@ public class Point2D {
         if (!(o instanceof Point2D)) {
             return false;
         }
+
         Point2D point2D = (Point2D) o;
-        return x == point2D.x && y == point2D.y;
-    }   
+        return (x == point2D.x) && (y == point2D.y);
+    }
+
     @Override
     public int hashCode() {
-        return Objects.hash(this.x,this.y);
+        return Objects.hash(this.x, this.y);
     }
-    
-    public getX() {
+
+    public int getX() {
         return this.x;
     }
+
     private void setX(int x) {
         this.x = x;
     }
 
-    public getY() {
+    public int getY() {
         return this.y;
     }
+
     private void setY(int y) {
         this.y = y;
     }
 
-        
 }

@@ -1,4 +1,4 @@
-package main.fr.ubordeaux.ao;
+package fr.ubordeaux.ao;
 
 /**
  * SortAlgo
