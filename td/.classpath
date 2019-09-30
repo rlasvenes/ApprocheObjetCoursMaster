@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="td1/src/main/java"/>
+	<classpathentry kind="src" path="td1/src/test/java"/>
+	<classpathentry kind="src" path="td2/src/main/java"/>
+	<classpathentry kind="src" path="td4/src/main/java"/>
+	<classpathentry kind="src" path="td5/src/main/java"/>
+	<classpathentry kind="src" path="td6/src/main/java"/>
+	<classpathentry kind="src" path="tdnote0/src/main/java"/>
+	<classpathentry kind="src" path="tdnote0/src/test/java"/>
+	<classpathentry kind="lib" path="td1/build/libs/td1-1.0-SNAPSHOT.jar"/>
+	<classpathentry kind="output" path="td1/bin/main"/>
+</classpath>

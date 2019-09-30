@@ -1,0 +1,6 @@
+QUESTiON :
+-Pour chacune des deux approches précisez combien d'objets seront présents en mémoire pour avoir un point coloré.
+-De plus précisez pourquoi les appels aux méthodes sont plus lentes dans le cas de la délégation.
+
+1)Pour la délégation l'on aura 2objets créé 1Point2d et  1ColoredPoint2Ddel contre seulement 1ColoredPoint2Dherit en héritage.
+2)il y a 2fois plus d'appel en délégation car 2fois plus d'objets => 4appels.
